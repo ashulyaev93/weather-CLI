@@ -1,9 +1,14 @@
 {
-  "name": "weather",
+  "name": "weather-cli-alexshul",
   "version": "1.0.0",
   "description": "CLI for weather",
-  "main": "index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +16,13 @@
     "weather"
   ],
   "author": "Alex Shulyaev",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "dedent": "^0.7.0",
+    "dotenv": "^16.0.1",
+    "js": "^0.1.0"
+  },
+  "peerDependenciesMeta": {}
 }
